@@ -6964,11 +6964,15 @@ body {
           animation-fill-mode: forwards; } }
   .home_contact .form-container form {
     width: 300px; }
+    .home_contact .form-container form .btn-submit {
+      padding: 16px 96px; }
   @media (min-width: 576px) {
     .home_contact {
       padding: 6rem 0; }
       .home_contact .form-container form {
-        width: 700px; } }
+        width: 700px; }
+        .home_contact .form-container form .btn-submit {
+          padding: 16px 71px; } }
   @media (min-width: 768px) {
     .home_contact .form-container form {
       width: 800px; } }

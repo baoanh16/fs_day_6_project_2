@@ -6,13 +6,13 @@
 	text-align: center
 	min-height: 486px
 	
-=section_button($bg_color,$border_color)
+=section_button($bg_color,$sd_color)
     background-color: $bg_color
     padding: 16px 71px
     color: white
     text-transform: uppercase
     font-weight: 700
-    border-bottom: $border_color solid 3px
+    box-shadow: 0px 4px 0px 0px $sd_color
     margin-top: 3rem
     /*BREAKPOINT FOR HOVER*/
     +media-breakpoint-up(md)

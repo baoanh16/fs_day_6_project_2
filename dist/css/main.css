@@ -6375,7 +6375,7 @@ body {
     color: white;
     text-transform: uppercase;
     font-weight: 700;
-    border-bottom: #C86A40 solid 3px;
+    box-shadow: 0px 4px 0px 0px #C86A40;
     margin-top: 3rem;
     /*BREAKPOINT FOR HOVER*/ }
     @media (min-width: 768px) {
@@ -6759,7 +6759,7 @@ body {
     color: white;
     text-transform: uppercase;
     font-weight: 700;
-    border-bottom: #118975 solid 3px;
+    box-shadow: 0px 4px 0px 0px #118975;
     margin-top: 3rem;
     /*BREAKPOINT FOR HOVER*/ }
     @media (min-width: 768px) {
@@ -6952,7 +6952,7 @@ body {
       color: white;
       text-transform: uppercase;
       font-weight: 700;
-      border-bottom: #118975 solid 3px;
+      box-shadow: 0px 4px 0px 0px #118975;
       margin-top: 3rem;
       /*BREAKPOINT FOR HOVER*/ }
       @media (min-width: 768px) {

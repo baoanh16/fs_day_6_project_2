@@ -1,2 +1,364 @@
 body
 	font-family: Roboto
+.home_slider
+	+home_section($wisteria)
+	h1 
+		color: #ffffff
+		font-size: 3rem
+		padding: 0 2rem
+	.btn-more
+		+section_button(#EB7D4B,#C86A40)
+	/* REPONSIVE HOME SLIDER */
+	+media-breakpoint-up(xs)
+		min-height: 326px
+		padding: 2rem 0
+		h1
+			font-size: 2rem
+			padding: 0
+		.btn-more
+			padding: 12px 31px
+	+media-breakpoint-up(sm)
+		min-height: 386px
+		h1
+			font-size: 2.5rem
+			padding: 0 3.5rem
+		.btn-more
+			padding: 16px 71px
+	+media-breakpoint-up(md)
+		h1
+			padding: 0 3.5rem
+	+media-breakpoint-up(lg)
+		h1
+			padding: 0
+	+media-breakpoint-up(xl)
+		h1
+			font-size: 3rem
+.home_service
+	+home_section($tquoise)
+	color: white
+	.service_title 
+		+section_title
+	.service_introduction
+		+section_introduction
+	.service_item
+		h3 
+			text-transform: uppercase
+			letter-spacing: 1px
+			font-weight: 600
+		p
+			padding: 0 2rem
+			font-weight: lighter
+	img
+		width: 180px
+	/* REPONSIVE HOME SERVICES */
+	+media-breakpoint-up(xs)
+		min-height: 386px
+		padding: 3rem 0
+		.service_title
+			font-size: 2rem
+		.service_introduction
+			margin: 0
+		.service_item
+			h3 
+				margin-bottom: 5px
+				font-size: 1.6rem
+			p 
+				padding: 0 30px
+	+media-breakpoint-up(sm)
+		min-height: 406px
+		.service_introduction
+			padding: 0 8rem
+		.service_item
+			h3 
+				margin-bottom: 10px
+				font-size: 1.5rem
+			p 
+				padding: 0
+	+media-breakpoint-up(md)
+		padding: 6rem 0
+		.service_item
+			h3
+				font-size: 1.1rem
+	+media-breakpoint-up(lg)
+		min-height: 506px
+		.service_introduction
+			margin-bottom: 12px
+			padding: 0
+			font-size: 1.2rem
+		.service_title
+			font-size: 2.5rem
+		.service_item
+			h3
+				font-size: 1.5rem
+.home_team
+	+home_section(#E7F1F8)
+	padding: 6rem
+	color: #384662
+	.team_title 
+		+section_title
+	.team_introduction
+		+section_introduction
+	img
+		border-radius: 50%
+		width: 150px
+	h3
+		font-size: 20px
+		font-weight: 700
+		color: #27283D
+		margin-bottom: 6px
+	h4
+		font-size: 14px
+		color: #69C8EB
+	p 
+		padding: 0 1.5rem
+	ul
+		li
+			a
+				display: block
+				background: #BDD1DF
+				width: 2.2rem
+				height: 2.2rem
+				line-height: 2.2rem
+				color: white
+				border-radius: 50%
+	/* REPONSIVE HOME TEAM */
+	+media-breakpoint-up(xs)
+		padding: 3rem 0
+		img
+			margin-bottom: 1rem
+		.team_introduction
+			padding: 0
+			margin: 0 0 25px
+		.team-item
+			margin-bottom: 40px
+			h4
+				margin-bottom: 12px
+			p 
+				margin-bottom: 12px
+				padding: 0
+			&:nth-child(4)
+				margin-bottom: 0
+	+media-breakpoint-up(sm)
+		.team_title
+			font-size: 2.5rem
+	+media-breakpoint-up(md)
+		.team-item
+			p 
+				padding: 0 2.5rem
+			&:nth-child(3)
+				margin-bottom: 0
+		ul	
+			.list-inline-item	
+				&:hover,&:active
+					a
+						i
+							transform: rotate(360deg)
+							transition-duration: 1s
+		img
+			&:hover,&:active
+				transform: scale(1.1)
+				transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36)
+				transition-duration: 0.5
+	+media-breakpoint-up(lg)
+		padding: 6rem
+		.team-item
+			margin-bottom: 0
+			p 
+				padding: 0
+				margin-bottom: 1.5rem
+	+media-breakpoint-up(xl)
+.home_skills
+	+home_section(white)
+	color: #384662
+	.skills_title 
+		+section_title
+	.skills_introduction
+		+section_introduction
+	.skills-item
+		.circular-progress-90
+			+circular_percentage(#30BAE7,54deg,"90%")
+		.circular-progress-75
+			+circular_percentage(#D74680,0deg,"75%")
+		.circular-progress-70
+			+circular_percentage(#15C7A8,-18deg,"70%")
+		.circular-progress-85
+			+circular_percentage(#EB7D4B,36deg,"85%")
+	/* REPONSIVE HOME SKILLS */
+	+media-breakpoint-up(xs)
+		padding: 3rem 0
+		.skills_introduction
+			padding: 0
+			margin: 0
+		.skills-item
+			.circular-progress-90,.circular-progress-75,.circular-progress-70,.circular-progress-85
+				margin: 3rem auto 1rem
+			h4 
+				font-size: 1.4rem
+	+media-breakpoint-up(sm)
+		padding: 6rem
+		.skills-item
+			.circular-progress-90,.circular-progress-75,.circular-progress-70,.circular-progress-85
+				margin: 3rem auto 1.5rem
+			h4 
+				font-size: 20px
+.home_portfolio
+	+home_section(#FFDD99)
+	color: #393939
+	.porfolio_title 
+		+section_title
+	.portfolio_introduction 
+		+section_introduction
+	.btn_load
+		+section_button(#17C2A4,#118975)
+	ul 
+		padding: 0
+		li 
+			display: inline-block
+			a
+				display: flex
+				justify-content: center
+				background-color: #EBC985
+				color: black
+	h3 
+		font-size: 1.5rem
+		margin: 10px 0 20px
+	/* REPONSIVE HOME PORTFOLIO */
+	+media-breakpoint-up(xs)
+		padding: 3rem 0
+		.portfolio_introduction
+			margin: 0 0 10px
+		.btn_load
+			margin-top: 1rem
+		img
+			margin-top: 15px
+		h3
+			font-size: 1rem
+			margin-top: 5px 0 0
+		ul 
+			margin: 0
+			li 
+				a
+					width: 3.5rem
+					height: auto
+					font-size: 0.9rem
+	+media-breakpoint-up(sm)
+		padding: 6rem
+		.porfolio_title
+			font-size: 2.5rem
+		h3
+			font-size: 1.2rem
+		ul 
+			li 
+				a
+					margin-left: 0.5px
+					width: 5rem
+					height: auto
+					font-size: 1rem
+	+media-breakpoint-up(md)
+		ul 
+			li 
+				&:hover,&:active
+					a
+						background: white
+						transition: 0.3s all ease-in-out
+		img
+			margin-top: 25px
+.home_comment
+	+home_section(#D74680)
+	padding: 6rem 0
+	color: white
+	.comment_title 
+		+section_title
+	.comment_introduction
+		+section_introduction
+		margin: 2rem
+	.comment_avatar
+            width: 80px
+            height: 80px
+            border-radius: 100%
+	.comment_content
+            text-align: left
+            font-size: 1rem
+            margin-bottom: 40px
+            .quote
+                color: white
+                font-weight: 400
+            .name
+                color: white
+                font-weight: 600
+                margin-bottom: 0
+            .job
+                color: #F8C795
+                font-weight: 400
+                font-size: 0.9rem
+                margin-bottom: 8px
+	/* REPONSIVE HOME COMMENT */
+	+media-breakpoint-up(xs)
+		padding: 3rem 0
+		.comment_avatar
+			width: 120px
+			height: 120px
+			margin-bottom: 15px
+		.comment_content
+			text-align: center
+			font-size: 1rem
+			margin-bottom: 40px
+			p
+				margin: 0 0 5px
+				padding: 0 1rem
+			.name
+				font-size: 1.5rem
+	+media-breakpoint-up(sm)
+		padding: 6rem 0 2rem
+	+media-breakpoint-up(md)
+		padding: 6rem 0 4rem
+		.comment_avatar
+			width: 80px
+			height: 80px
+			margin-bottom: 15px
+			&:hover,&:active
+				transform: scale(1.5)
+				transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36)
+				transition-duration: 0.5
+		.comment_content
+			text-align: left
+			font-size: 1rem
+			margin-bottom: 50px
+			&:nth-child(3),&:nth-child(4)
+				margin-bottom: 0
+			p 
+				padding: 0
+.home_contact
+	+home_section(#3C5499)
+	color: white
+	.contact_title 
+		+section_title
+	.contact_introduction
+		+section_introduction
+	.form-container
+		justify-content: center
+		form
+			input,textarea
+				background-color: #273A71      
+				color: white
+				margin-top: 12px
+				border: 0
+			textarea
+				height: 300px
+			.btn-submit
+				+section_button(#17C2A4,#118975)
+	/* REPONSIVE HOME CONTACT */
+	+media-breakpoint-up(xs)
+		padding: 3rem 0
+		.form-container
+			form
+				width: 300px
+	+media-breakpoint-up(sm)
+		padding: 6rem 0
+		.form-container
+			form
+				width: 700px
+	+media-breakpoint-up(md)
+		.form-container
+			form
+				width: 800px

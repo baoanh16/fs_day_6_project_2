@@ -6,12 +6,202 @@ block variables
 	- var bodyclass = 'home'
 
 block body
-	section.home
+	section.home_slider
 		.container
 			.row
 				.col
-					.jumbotron.text-center.mt-4
-						h1.hidden-md-up.display-4 Awesome Bootstrap Sites!
-						h2.hidden-md-up Dễ dàng triển khai và sử dụng
-						p.lead Bộ công cụ phát triển web vô cùng mạnh mẽ dựa trên nền tảng Bootstrap.
-
+					h1 
+						| Lorem ipsum dolor, sit ametadipisicing elit.
+						br
+						| Ipsam, deleniti minima? 
+					.btn.btn-more Work with us!
+	section.home_service
+		.container
+			.row
+				.col
+					h2.service_title We provide services
+					p.service_introduction Lorem ipsum dolor sit ametadipisicing elit. Nam maiores corporis nulla eius laboriosam minima sequi.
+			.row
+				.col-sm-6.col-md-3.service_item
+					img(src="./img/home_branding_icon.png", alt="")
+					h3 Branding
+					p Nam maiores corporis nulla eius laboriosam minima sequi.
+				.col-sm-6.col-md-3.service_item
+					img(src="./img/home_design_icon.png", alt="")
+					h3 Design
+					p Nam maiores corporis nulla eius laboriosam minima sequi.
+				.col-sm-6.col-md-3.service_item
+					img(src="./img/home_development_icon.png", alt="")
+					h3 Development
+					p Nam maiores corporis nulla eius laboriosam minima sequi.
+				.col-sm-6.col-md-3.service_item
+					img(src="./img/home_rocket_science_icon.png", alt="")
+					h3 Rocket Science
+					p Nam maiores corporis nulla eius laboriosam minima sequi.
+	section.home_team
+		.container
+			.row
+				.col
+					h2.team_title Meet our beautiful team
+					p.team_introduction Lorem ipsum dolor sit ametadipisicing elit. Nam maiores corporis nulla eius laboriosam minima sequi.
+			.row
+				.col-sm-6.col-lg-3.team-item
+					img(src="./img/home_team_avatar_1.png", alt="")
+					h3 Selena Gomez 
+					h4 Ceo / Marketing Guru
+					p Lorem ipsum dolor sit, ametadipisicing elit. Rerum, obcaecati reprehenderit! Non minus doloribus eum odit ipsam, repudiandae esse.
+					ul.list-inline
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-facebook
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-twitter
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-linkedin
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-envelope
+				.col-sm-6.col-lg-3.team-item
+					img(src="./img/home_team_avatar_1.png", alt="")
+					h3 Selena Gomez 
+					h4 Ceo / Marketing Guru
+					p Lorem ipsum dolor sit, ametadipisicing elit. Rerum, obcaecati reprehenderit! Non minus doloribus eum odit ipsam, repudiandae esse.
+					ul.list-inline
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-facebook
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-twitter
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-linkedin
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-envelope
+				.col-sm-6.col-lg-3.team-item
+					img(src="./img/home_team_avatar_1.png", alt="")
+					h3 Selena Gomez 
+					h4 Ceo / Marketing Guru
+					p Lorem ipsum dolor sit, ametadipisicing elit. Rerum, obcaecati reprehenderit! Non minus doloribus eum odit ipsam, repudiandae esse.
+					ul.list-inline
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-facebook
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-twitter
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-linkedin
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-envelope
+				.col-sm-6.col-lg-3.team-item
+					img(src="./img/home_team_avatar_1.png", alt="")
+					h3 Selena Gomez 
+					h4 Ceo / Marketing Guru
+					p Lorem ipsum dolor sit, ametadipisicing elit. Rerum, obcaecati reprehenderit! Non minus doloribus eum odit ipsam, repudiandae esse.
+					ul.list-inline
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-facebook
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-twitter
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-linkedin
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-envelope
+	section.home_skills
+		.container
+			.row
+				.col
+					h2.skills_title We get skills
+					p.skills_introduction Lorem ipsum dolor sit ametadipisicing elit. Nam maiores corporis nulla eius laboriosam minima sequi.
+			.row
+				.col-sm-6.col-lg-3.skills-item
+					.circular-progress-90
+					h4 Web design
+				.col-sm-6.col-lg-3.skills-item
+					.circular-progress-75
+					h4 Html / css
+				.col-sm-6.col-lg-3.skills-item
+					.circular-progress-70
+					h4 Graphic design
+				.col-sm-6.col-lg-3.skills-item
+					.circular-progress-85
+					h4 Ui / ux
+	section.home_portfolio
+		.container       
+			.row
+				.col
+					h2.porfolio_title Our portfolio
+					p.portfolio_introduction  Lorem ipsum dolor sit amet consectetur.
+					ul.list-inline
+						li.list-inline-item
+							a(href="#").btn ALL
+						li.list-inline-item
+							a(href="#").btn WEBS
+						li.list-inline-item
+							a(href="#").btn APPS
+						li.list-inline-item
+							a(href="#").btn ICONS
+			- var thumb_index = 0
+			- var thumb_img = 1
+			- var thumb_array = ['ISOMETRIC PERSPECTIVE MOCK-UP','TIMEZONE APP UI','VIRO VIDEO PLAYER UI','BLOG / MAGAZINE FLAT UI KIT']
+			.row
+				while thumb_index < 4 && thumb_img <= 4
+					.col-md-6
+						img(src="./img/home_work_thumbnail_"+ thumb_img++ +".png", alt="").img-fluid
+						h3= thumb_array[thumb_index++]
+			.row
+				.col
+					.p
+						a(href="#").btn_load.btn LOAD MORE PROJECT
+	section.home_comment
+		.container       
+			.row
+				.col
+					h2.comment_title What people say about us
+					p.comment_introduction  Our client love us!
+			- var ppl_name = ['Bao Nguyen Yam','Chanel Iman','Bill Gates','Tim Cook']
+			- var ppl_job = ['Founder of Fullstack Vietnam','CEO of Pinterest','Founder of Microsoft','CEO of Apple']
+			- var ppl_index = 0
+			.row
+				while ppl_index <  4
+					.col-lg-6
+						.row
+							.col-md-3
+								img(src="./img/home_team_avatar_1.png", alt="").comment_avatar.img-fluid
+							.col-md-9
+								.comment_content
+									p
+										i.quote "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nisi assumenda aut voluptatum possimus aspernatur libero autem repudiandae, delectus ipsum perferendis architecto."
+										h5.name= ppl_name[ppl_index]
+										h5.job= ppl_job[ppl_index]
+										- ppl_index = ppl_index + 1			
+	section.home_contact
+		.container       
+			.row.comment_container
+				.col
+					h2.contact_title Get in touch
+					p.contact_introduction  29 Cemetery St. Lady Lake, FL 32159, United States of America. Tel: (799) 643-0477
+			.row.form-container
+				form
+					.form-row
+						.col-sm-6
+							input.input-text.form-control(type='text' placeholder='Your name')
+						.col-sm-6
+							input.input-text.form-control(type='text' placeholder='Your email')
+					.form-row
+						.col-sm-12
+							textarea.input-textarea.form-control(row='8'
+							placeholder='Your message')
+					.form-row
+						.col
+							button(type="submit").btn.btn-submit Send message

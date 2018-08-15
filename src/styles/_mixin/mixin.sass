@@ -1,0 +1,73 @@
+=home_section($bg_color)
+	background-color: $bg_color
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	min-height: 486px
+	
+=section_button($bg_color,$border_color)
+    background-color: $bg_color
+    padding: 16px 71px
+    color: white
+    text-transform: uppercase
+    font-weight: 700
+    border-bottom: $border_color solid 3px
+    margin-top: 3rem
+    /*BREAKPOINT FOR HOVER*/
+    +media-breakpoint-up(md)
+        &:hover
+            animation-name: hvr-bob
+            animation-duration: 0.3s
+            animation-timing-function: ease-out
+            animation-iteration-count: 1
+            animation-fill-mode: forwards
+
+=section_title
+    position: relative
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 2.5rem
+    letter-spacing: 3px
+    margin-bottom: 2.5rem
+    &:before
+        content: ''
+        display: block
+        background-color: black
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        width: 80px
+        height: 4px
+        bottom: -20px
+        opacity: 0.1
+
+=section_introduction
+    font-size: 1.2rem
+    font-weight: light
+    margin: 2.8rem
+
+=circular_percentage($color, $deg, $content)
+    background: linear-gradient($deg, $color 50%, transparent 50%, transparent), linear-gradient(270deg, $color 50%, #E0E0E0 50%, #E0E0E0)
+    border-radius: 50%
+    height: 150px
+    margin: 3rem auto 1.5rem
+    position: relative
+    width: 150px
+    transition: all .3s linear
+    &:before
+        background-color: #FAFAFA
+        border-radius: 50%
+        color: #4E586F
+        content: $content
+        font-size: 50px
+        font-weight: 400
+        height: 100%
+        left: 0
+        line-height: 150px
+        position: absolute
+        text-align: center
+        top: 0
+        -webkit-transform: scale(0.87)
+        transform: scale(0.85)
+        width: 100%

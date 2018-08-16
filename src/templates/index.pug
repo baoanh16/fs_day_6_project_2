@@ -174,34 +174,32 @@ block body
 			- var ppl_index = 0
 			.row
 				while ppl_index <  4
-					.col-lg-6
-						.row
-							.col-md-3
-								img(src="./img/home_team_avatar_1.png", alt="").comment_avatar.img-fluid
-							.col-md-9
-								.comment_content
-									p
-										i.quote "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nisi assumenda aut voluptatum possimus aspernatur libero autem repudiandae, delectus ipsum perferendis architecto."
-										h5.name= ppl_name[ppl_index]
-										h5.job= ppl_job[ppl_index]
-										- ppl_index = ppl_index + 1			
+					.col-md-6
+						.media
+							img(src="./img/home_team_avatar_1.png", alt="").mr-3.comment_avatar
+							.media-body.mt-0.comment_content
+								p
+									i.quote "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nisi assumenda aut voluptatum possimus aspernatur libero autem repudiandae, delectus ipsum perferendis architecto."
+									h5.name= ppl_name[ppl_index]
+									h5.job= ppl_job[ppl_index]
+									- ppl_index = ppl_index + 1			
 	section.home_contact
 		.container       
-			.row.comment_container
+			.row
 				.col
 					h2.contact_title Get in touch
 					p.contact_introduction  29 Cemetery St. Lady Lake, FL 32159, United States of America. Tel: (799) 643-0477
 			.row.form-container
 				form
 					.form-row
-						.col-sm-6
+						.col-sm-6.form-group
 							input.input-text.form-control(type='text' placeholder='Your name')
-						.col-sm-6
+						.col-sm-6.form-group
 							input.input-text.form-control(type='text' placeholder='Your email')
-					.form-row
+					.form-row.form-group
 						.col-sm-12
 							textarea.input-textarea.form-control(row='8'
 							placeholder='Your message')
-					.form-row
+					.form-row.form-group
 						.col
 							button(type="submit").btn.btn-submit Send message

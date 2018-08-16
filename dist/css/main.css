@@ -6323,6 +6323,13 @@ h3, h4 {
   letter-spacing: 1px;
   font-weight: 600; }
 
+body::-webkit-scrollbar {
+  width: 0.5em; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 5px solid slategrey; }
+
 @media print {
   .container {
     width: auto; } }
@@ -6349,12 +6356,34 @@ header .navbar-brand img {
   header .navbar-brand img {
     max-height: 2rem; } }
 
-footer img {
-  max-width: 200px; }
+footer {
+  background-color: #344B8E; }
+  footer ul {
+    text-align: center;
+    margin: auto; }
+    footer ul li a {
+      font-family: 'Titillium Web', sans-serif;
+      color: white;
+      font-size: 1.4rem;
+      font-weight: 600; }
+    footer ul li:hover a {
+      text-decoration: none;
+      color: #30B3E1; }
+  footer ul li a {
+    font-size: 0.6rem; }
+  @media (min-width: 576px) {
+    footer ul li {
+      margin: 0 5px; }
+      footer ul li a {
+        font-size: 1.2rem; } }
+  @media (min-width: 768px) {
+    footer ul li {
+      margin: 0 18px; } }
 
 body {
   font-family: Roboto; }
 
+/* HOME SLIDER */
 .home_slider {
   background-color: #8e44ad;
   display: flex;
@@ -6408,6 +6437,7 @@ body {
     .home_slider h1 {
       font-size: 3rem; } }
 
+/*HOME SERVICE*/
 .home_service {
   background-color: #1abc9c;
   display: flex;
@@ -6486,6 +6516,7 @@ body {
       .home_service .service_item h3 {
         font-size: 1.5rem; } }
 
+/*HOME TEAM*/
 .home_team {
   background-color: #E7F1F8;
   display: flex;
@@ -6578,6 +6609,7 @@ body {
           padding: 0;
           margin-bottom: 1.5rem; } }
 
+/*HOME SKILLS*/
 .home_skills {
   background-color: white;
   display: flex;
@@ -6721,6 +6753,7 @@ body {
       .home_skills .skills-item h4 {
         font-size: 20px; } }
 
+/*HOME PORTFOLIO*/
 .home_portfolio {
   background-color: #FFDD99;
   display: flex;
@@ -6815,6 +6848,7 @@ body {
     .home_portfolio img {
       margin-top: 25px; } }
 
+/*HOME COMMENT*/
 .home_comment {
   background-color: #D74680;
   display: flex;
@@ -6869,19 +6903,6 @@ body {
       font-weight: 400;
       font-size: 0.9rem;
       margin-bottom: 8px; }
-  .home_comment .comment_avatar {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 15px; }
-  .home_comment .comment_content {
-    text-align: center;
-    font-size: 1rem;
-    margin-bottom: 40px; }
-    .home_comment .comment_content p {
-      margin: 0 0 5px;
-      padding: 0 1rem; }
-    .home_comment .comment_content .name {
-      font-size: 1.5rem; }
   @media (min-width: 576px) {
     .home_comment {
       padding: 6rem 0 2rem; } }
@@ -6889,8 +6910,8 @@ body {
     .home_comment {
       padding: 6rem 0 4rem; }
       .home_comment .comment_avatar {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         margin-bottom: 15px; }
         .home_comment .comment_avatar:hover, .home_comment .comment_avatar:active {
           transform: scale(1.5);
@@ -6905,6 +6926,7 @@ body {
         .home_comment .comment_content p {
           padding: 0; } }
 
+/*HOME CONTACT*/
 .home_contact {
   background-color: #3C5499;
   display: flex;
@@ -6944,6 +6966,8 @@ body {
       color: white;
       margin-top: 12px;
       border: 0; }
+      .home_contact .form-container form input:hover, .home_contact .form-container form input:focus, .home_contact .form-container form textarea:hover, .home_contact .form-container form textarea:focus {
+        background-color: #1a274b; }
     .home_contact .form-container form textarea {
       height: 300px; }
     .home_contact .form-container form .btn-submit {
@@ -6963,18 +6987,25 @@ body {
           animation-iteration-count: 1;
           animation-fill-mode: forwards; } }
   .home_contact .form-container form {
-    width: 300px; }
+    width: 90%; }
     .home_contact .form-container form .btn-submit {
       padding: 16px 96px; }
   @media (min-width: 576px) {
     .home_contact {
       padding: 6rem 0; }
       .home_contact .form-container form {
-        width: 700px; }
+        width: 100%; }
         .home_contact .form-container form .btn-submit {
-          padding: 16px 71px; } }
+          padding: 16px 71px;
+          margin-top: 8px; } }
   @media (min-width: 768px) {
     .home_contact .form-container form {
-      width: 800px; } }
+      width: 80%; } }
+  @media (min-width: 992px) {
+    .home_contact .form-container form {
+      width: 90%; } }
+  @media (min-width: 1200px) {
+    .home_contact .form-container form {
+      width: 60%; } }
 
 /*# sourceMappingURL=main.css.map */

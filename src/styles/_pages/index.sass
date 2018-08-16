@@ -1,5 +1,6 @@
 body
 	font-family: Roboto
+/* HOME SLIDER */
 .home_slider
 	+home_section($wisteria)
 	h1 
@@ -33,6 +34,7 @@ body
 	+media-breakpoint-up(xl)
 		h1
 			font-size: 3rem
+/*HOME SERVICE*/
 .home_service
 	+home_section($tquoise)
 	color: white
@@ -90,6 +92,7 @@ body
 		.service_item
 			h3
 				font-size: 1.5rem
+/*HOME TEAM*/
 .home_team
 	+home_section(#E7F1F8)
 	padding: 6rem
@@ -167,6 +170,7 @@ body
 				padding: 0
 				margin-bottom: 1.5rem
 	+media-breakpoint-up(xl)
+/*HOME SKILLS*/
 .home_skills
 	+home_section(white)
 	color: #384662
@@ -201,6 +205,7 @@ body
 				margin: 3rem auto 1.5rem
 			h4 
 				font-size: 20px
+/*HOME PORTFOLIO*/
 .home_portfolio
 	+home_section(#FFDD99)
 	color: #393939
@@ -263,6 +268,7 @@ body
 						transition: 0.3s all ease-in-out
 		img
 			margin-top: 25px
+/*HOME COMMENT*/
 .home_comment
 	+home_section(#D74680)
 	padding: 6rem 0
@@ -295,26 +301,13 @@ body
 	/* REPONSIVE HOME COMMENT */
 	+media-breakpoint-up(xs)
 		padding: 3rem 0
-		.comment_avatar
-			width: 120px
-			height: 120px
-			margin-bottom: 15px
-		.comment_content
-			text-align: center
-			font-size: 1rem
-			margin-bottom: 40px
-			p
-				margin: 0 0 5px
-				padding: 0 1rem
-			.name
-				font-size: 1.5rem
 	+media-breakpoint-up(sm)
 		padding: 6rem 0 2rem
 	+media-breakpoint-up(md)
 		padding: 6rem 0 4rem
 		.comment_avatar
-			width: 80px
-			height: 80px
+			width: 70px
+			height: 70px
 			margin-bottom: 15px
 			&:hover,&:active
 				transform: scale(1.5)
@@ -328,6 +321,7 @@ body
 				margin-bottom: 0
 			p 
 				padding: 0
+/*HOME CONTACT*/
 .home_contact
 	+home_section(#3C5499)
 	color: white
@@ -343,6 +337,8 @@ body
 				color: white
 				margin-top: 12px
 				border: 0
+				&:hover,&:focus
+					background-color: darken(#273A71,10%)
 			textarea
 				height: 300px
 			.btn-submit
@@ -352,17 +348,26 @@ body
 		padding: 3rem 0
 		.form-container
 			form
-				width: 300px
+				width: 90%
 				.btn-submit
 					padding: 16px 96px
 	+media-breakpoint-up(sm)
 		padding: 6rem 0
 		.form-container
 			form
-				width: 700px
+				width: 100%
 				.btn-submit
 					padding: 16px 71px
+					margin-top: 8px
 	+media-breakpoint-up(md)
 		.form-container
 			form
-				width: 800px
+				width: 80%
+	+media-breakpoint-up(lg)
+		.form-container
+			form
+				width: 90%
+	+media-breakpoint-up(xl)
+		.form-container
+			form
+				width: 60%

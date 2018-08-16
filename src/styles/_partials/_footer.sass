@@ -1,3 +1,30 @@
 footer
-	img 
-		max-width: 200px
+	background-color: #344B8E
+	ul
+		text-align: center
+		margin: auto
+		li
+			a
+				font-family: 'Titillium Web', sans-serif
+				color: white
+				font-size: 1.4rem
+				font-weight: 600
+			&:hover
+				a
+					text-decoration: none
+					color: #30B3E1
+	+media-breakpoint-up(xs)
+		ul
+			li
+				a
+					font-size: 0.6rem
+	+media-breakpoint-up(sm)
+		ul
+			li
+				margin: 0 5px
+				a
+					font-size: 1.2rem
+	+media-breakpoint-up(md)
+		ul
+			li
+				margin: 0 18px
